@@ -2,7 +2,6 @@ package configs
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"time"
 
@@ -19,9 +18,8 @@ func ConnectDB() *mongo.Client {
 	}
 
 	//System is try to connect in 20 seconds
-	ctx, baaa := context.WithTimeout(context.Background(), 20*time.Second)
+	ctx, _ := context.WithTimeout(context.Background(), 20*time.Second)
 	err = client.Connect(ctx)
-	fmt.Println(baaa, err)
 
 	// Added ping for the test
 	err = client.Ping(ctx, nil)

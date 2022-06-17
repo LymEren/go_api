@@ -4,7 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/goapiexamples/goeren/models"
+	"go_api/models"
+
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

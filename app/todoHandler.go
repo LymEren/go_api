@@ -3,8 +3,9 @@ package app
 import (
 	"net/http"
 
-	"github.com/goapiexamples/goeren/models"
-	"github.com/goapiexamples/goeren/services"
+	"go_api/models"
+	"go_api/services"
+
 	"github.com/gofiber/fiber/v2"
 )
 

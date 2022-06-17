@@ -1,9 +1,9 @@
 package services
 
 import (
-	"github.com/goapiexamples/goeren/dto"
-	"github.com/goapiexamples/goeren/models"
-	"github.com/goapiexamples/goeren/repository"
+	"go_api/dto"
+	"go_api/models"
+	"go_api/repository"
 )
 
 // We are using insert (in repository)

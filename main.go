@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/goapiexamples/goeren/app"
-	"github.com/goapiexamples/goeren/configs"
-	"github.com/goapiexamples/goeren/repository"
-	"github.com/goapiexamples/goeren/services"
+	"go_api/app"
+	"go_api/configs"
+	"go_api/repository"
+	"go_api/services"
+
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -22,6 +23,6 @@ func main() {
 	td := app.TodoHandler{Service: services.NewTodoServise(TodoRepositoryDB)}
 
 	// Post request (postman)
-	appRoute.Post("/api/todo", td.CreateTodo)
+	appRoute.Post("/api/todos", td.CreateTodo)
 	appRoute.Listen(":8080")
 }
