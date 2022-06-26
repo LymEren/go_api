@@ -1,5 +1,7 @@
 package configs
 
+// We defined environmental elements
+
 import (
 	"log"
 	"os"
