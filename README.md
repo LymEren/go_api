@@ -1,1 +1,3 @@
-Golang API project created using MongoDB and Fiber
+Golang API Project
+
+Created using MongoDB and Fiber
